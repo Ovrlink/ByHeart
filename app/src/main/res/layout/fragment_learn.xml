@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center|top"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".presentation.learn.LearnFragment">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="120dp" />
+
+    <EditText
+        android:id="@+id/wordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/ent_background"
+        android:hint="Write a word"
+        android:maxLength="20"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/definitionButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/wordEditText"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/heart"
+        android:gravity="center"
+        android:text="Find definition"
+        android:textColor="@color/white" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/randomButton"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@color/heart"
+        android:gravity="center"
+        android:text="Random"
+        android:textColor="@color/white" />
+
+</LinearLayout>
